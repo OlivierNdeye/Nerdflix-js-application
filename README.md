@@ -5,4 +5,4 @@ Owl-Caroussel e Jquery
 # Conhecimentos aplicados
 Display Flex, Owl-Nav (para movimento do carrosel de imagens),
 # Screenshoot
-<img="./img/photo_netflix.png">
+<img src="./img/photo_netflix.png" />
