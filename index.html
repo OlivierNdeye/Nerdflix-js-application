@@ -3,21 +3,25 @@
      <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="style/main.css">
-          <link rel="stylesheet" href="style/responsive.css">
+          <link rel="stylesheet" href="./style/main.css">
+          <link rel="stylesheet" href="./style/responsive.css">
           
           <!--owl css-->
-          <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-          <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+          <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+          <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
          
+		 <!-- google fonts -->
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+		 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		 <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
          
           <title>Netflix Clone</title>
      </head>
    <body>
        <header>
           <div class="container">
-              <h2 class="logo">NETFLIX</h2>
-              <nav>
+	        <img class="logo" src="./img/logo.png" alt="" srcset="" />
+              <nav class="navbar">
                   <a href="#">Início</a>  
                   <a href="#">Séries</a>  
                   <a href="#">Filmes</a>  
@@ -34,11 +38,11 @@
                   <P class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</P>
                   <div class="botoes">
                      <button role="button" class="botao">
-                         <i class="fas fa-play"></i>
+                         <i class="fas fa-play" onclick="play()" id=pl></i>
                          ASSITIR AGORA
                      </button>
                        <button role="button" class="botao">
-                         <i class="fas fa-info-circle"></i>
+                         <i class="fas fa-info-circle" onclick="info()" id=""></i>
                          MAIS INFORMAÇÕES 
                        </button>
                   </div>                               
@@ -49,6 +53,7 @@
         <!--Carrossel de Filmes com Owl Carrossel(jquery)-->
 
         <div class="carrosel-filmes">
+		 <h2 class="first-title">Minha Lista</h2>
           <div class="owl-carousel owl-theme">
             <div class="item">
               <img class="box-filme" src="./img/mini-01.jpg" alt="" srcset="">
@@ -62,6 +67,62 @@
             <div class="item">
               <img class="box-filme" src="./img/mini-04.jpg" alt="" srcset="">
             </div>
+        </div>
+		
+	   <div class="carrosel-filmes">
+		 <h2 class="items-title"> Continuar Assistindo como Olivier </h2>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="box-filme" src="./img/mini-05.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-12.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-09.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-10.jpg" alt="" srcset="">
+            </div>
+        </div>
+		
+	   <div class="carrosel-filmes">
+		 <h2 class="items-title"> Filmes de Ficção Científica </h2>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="box-filme" src="./img/mini-11.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-13.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-14.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-15.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+	   <div class="carrosel-filmes">
+		 <h2 class="items-title"> Romance </h2>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="box-filme" src="./img/mini-16.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-17.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-18.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/mini-19.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+	   <div class="carrosel-filmes">
+		 <h2 class="items-title"> Animes </h2>
+          <div class="owl-carousel owl-theme">
             <div class="item">
               <img class="box-filme" src="./img/mini-05.jpg" alt="" srcset="">
             </div>
@@ -74,14 +135,9 @@
             <div class="item">
               <img class="box-filme" src="./img/mini-08.jpg" alt="" srcset="">
             </div>
-            <div class="item">
-              <img class="box-filme" src="./img/mini-09.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-              <img class="box-filme" src="./img/mini-10.jpg" alt="" srcset="">
-            </div>
+        </div>		
+
           </div>
-        </div>
 
         <script src="https://kit.fontawesome.com/dc8cc5a10f.js"></script>
         <script src="js/owl/jquery.min.js"></script>        
