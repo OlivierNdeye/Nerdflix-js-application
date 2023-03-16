@@ -13,7 +13,7 @@
 
 body {
     background: var(--preto);
-    font-family: 'Arial', Times, serif;
+	font-family: 'Lato', sans-serif;
     color: white;
 }
 
@@ -24,12 +24,7 @@ header .container{
     justify-content: space-between;
 }
 
-header .logo {
-    margin-left: 5px; 
-    color: var(--vermelho);
-    font-family: 'Arial Black', sans-serif;
-    font-size: 40px;
-}
+
 
 header nav a {
     text-decoration: none;
@@ -71,6 +66,8 @@ header nav a:hover {
   background-color: rgba(0,0,0,.50);
   color: white;
   border: none;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  
  
   padding: 15px 30px;
   margin-right: 15px;
@@ -88,21 +85,42 @@ header nav a:hover {
     margin-right: 8px;
 }
 
-.container {
-    margin-left: 20px;
-    margin-right: 10px;
-}
+.container { 
+	margin-left: 10px; 
+	margin-right: 20px; 
+} 
 
 .filme-principal .container {
     width: 70%;
 }
 
 .box-filme {
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    width: 200px;
     display: block;
 }
+
+/* .box-filme:hover {
+	border: gold;
+} */
 
 .carrosel-filmes {
     margin-top: 5px;
 }
+
+
+.first-title {
+	margin-top: -35px;
+	font-size: 16px;
+}
+
+.items-title h2 {
+	margin: 10px;
+}
+
+
+.item {
+	padding-bottom: 15px;
+	margin: 10px;
+}
+
